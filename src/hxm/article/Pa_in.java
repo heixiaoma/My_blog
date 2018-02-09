@@ -13,6 +13,7 @@ public class Pa_in {
                 for (int i=0;i<cs.size();i++){
                     String title=cs.get(i).title;
                     String content=cs.get(i).content;
+                    System.out.println(title+content);
                     ps.insert(title,content);
 
                 }

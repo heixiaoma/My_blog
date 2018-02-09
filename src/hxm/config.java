@@ -6,17 +6,17 @@ public class config {
     //后台账号，密码为：admin root
     //配置
     //数据库名字
-    public static String dbname="hxmtop";
+    public static String dbname="ksweb";
     //数据库用户名
-    public static String dbuser="hxmtop";
+    public static String dbuser="root";
     //数据库的用户密码
-    public static String dbpwd="M135799";
+    public static String dbpwd="root";
     //163邮箱账号
-    public static String mail_num="15228311770@163.com";
+    public static String mail_num="xxxxx@163.com";
     //邮箱独立服务器密码
-    public static String mail_pwd="135799M";
+    public static String mail_pwd="xxxxxxx";
     //接收者邮箱
-    public static String mail_my="1417262058@qq.com";
+    public static String mail_my="xxxxxx@qq.com";
     //爬虫时间控制
     public static long period = 24*60*60*1000;
     //不可修改

@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="jetty-client-9.4.8.v20171121 (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/jetty-client-9.4.8.v20171121.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/httpmime-4.5.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/httpcore-4.4.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/httpclient-4.5.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/htmlunit-core-js-2.28.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/cssparser-0.9.24.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-text-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-net-3.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-lang3-3.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-io-2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-codec-1.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

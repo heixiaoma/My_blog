@@ -1,6 +1,5 @@
 package hxm.mail;
 
-
 import hxm.config;
 public class Mail {
     public boolean send (String res){

@@ -23,15 +23,14 @@ To change this template use File | Settings | File Templates.
 <script src="../web/js/modernizr.js"></script>
 <![endif]-->
 <script src="../web/js/scrollReveal.js"></script>
-    <script src="http://c.csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="http://c.csdnimg.cn/public/static/css/avatar.css">
-    <link rel="stylesheet" href="http://csdnimg.cn/release/phoenix/production/main-305f4ba2cd.css">
-    <link rel="stylesheet" href="http://c.csdnimg.cn/public/common/toolbar/content_toolbar_css/content_toolbar.css">
-    <script src="http://csdnimg.cn/rabbit/exposure-click/main-1.0.5.js"></script>
-    <script type="text/javascript" src="http://csdnimg.cn/pubfooter/js/tracking-1.0.2.js" charset="utf-8"></script>
-    <script type="text/javascript" src="http://csdnimg.cn/release/phoenix/production/main-7d75e42869.js"></script>
-    <script src="http://dup.baidustatic.com/js/ds.js"></script>
-    <link rel="stylesheet" href="http://csdnimg.cn/release/phoenix/production/htmledit_views-21a3eac8a8.css">
+    <link rel="stylesheet" href="https://my.oschina.net/dist/www/css/blog.min.css">
+
+    <link rel="stylesheet" href="https://my.oschina.net/build/www/vendor/highlight/9.4.0/styles/zenburn.css">
+    <style>
+        #blogBody{
+            margin-right: 200px;
+        }
+    </style>
 </head>
 <body>
 <header>

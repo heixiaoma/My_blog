@@ -1,5 +1,11 @@
 package hxm;
 
+import com.gargoylesoftware.htmlunit.BrowserVersion;
+import com.gargoylesoftware.htmlunit.WebClient;
+import com.gargoylesoftware.htmlunit.html.HtmlDivision;
+import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import hxm.article.Cj;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -13,14 +19,32 @@ import java.util.regex.Pattern;
 public class Test {
     public static void main(String[] xxx)
     {
+        new Cj().get_Title();
         //getFormatDate();
        // System.out.println(get_Wz("http://blog.csdn.net/qq_34137397/article/details/72837353"));
-        get_Title();
+//        get_Title();
+
     }
 
+    public String getContenthtml(String url){
+        try {
+
+            final WebClient mWebClient = new WebClient(BrowserVersion.CHROME);
+//                mWebClient.getOptions().setCssEnabled(false);
+//                mWebClient.getOptions().setJavaScriptEnabled(false);
+            final HtmlPage mHtmlPage = mWebClient.getPage(url);
+            //从[烟雨林博客]上获取标签hed的内容
+
+            return (mHtmlPage.asXml());
+
+        }catch (Exception r){
+        }
+        return "";
+
+    }
     private static void get_Title(){
-        String res = httpRequest("https://www.csdn.net/nav/lang");
-        Pattern p = Pattern.compile("<h2(.*?)</h2>");
+        String res = httpRequest("https://www.oschina.net/blog");
+        Pattern p = Pattern.compile("<header class=\"box vertical blog-title-box\">(.*?)</a>");
         Matcher m = p.matcher(res);
         while (m.find()) {
             Matcher ms = Pattern.compile("(<a(.*?)>.*?</a>)", Pattern.DOTALL).matcher(m.group());
@@ -31,9 +55,10 @@ public class Test {
                 int a=re.indexOf("href=\"");
                 int b=re.indexOf("\"",a+10);
                 String url=re.substring(a+6,b);
-                int c=re.indexOf(">");
-                int d=re.indexOf("<",c);
-                String title=re.substring(c+1,d).trim();
+                System.out.println(url);
+                int c=re.indexOf("title=");
+                int d=re.indexOf("\">",c);
+                String title=re.substring(c+7,d).trim();
                System.out.println("标题："+title);
 
             }
@@ -63,7 +88,7 @@ public class Test {
             httpUrlConn.setDoOutput(false);
             httpUrlConn.setDoInput(true);
             httpUrlConn.setUseCaches(false);
-            httpUrlConn.setRequestProperty("Cookie","uuid_tt_dd=3260494214781029992_20171118; UM_distinctid=1608bcd613674c-0532a9662601ad-4d015463-1fa400-1608bcd61374af; kd_user_id=dae78c0f-46cb-4682-b715-98d039d43f43; gr_user_id=02742594-cd5c-41ab-8bec-e4c1e746adbe; uaid=31f829d7567059c56ab342334ef29e6e; __message_sys_msg_id=0; __message_gu_msg_id=0; __message_cnel_msg_id=0; Hm_ct_6bcd52f51e9b3dce32bec4a3997715ac=1788*1*PC_VC; TY_SESSION_ID=c99321c6-6ef9-48ca-bbf8-04904980ee45; Hm_lvt_6bcd52f51e9b3dce32bec4a3997715ac=1518007241,1518102503,1518155060,1518168713; Hm_lpvt_6bcd52f51e9b3dce32bec4a3997715ac=1518169421; ADHOC_MEMBERSHIP_CLIENT_ID1.0=5e4bc303-0736-44fa-420d-e9884314279d; dc_tos=p3vn0t; dc_session_id=10_1518106932801.655471");
+            httpUrlConn.setRequestProperty("User-Agent","Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0");
             httpUrlConn.setRequestMethod("GET");
             httpUrlConn.connect();
 
