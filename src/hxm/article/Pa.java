@@ -67,7 +67,6 @@ public class Pa extends DBhelper {
         int flage=this.executeUpdate("INSERT INTO pa (id,title,content,time) SELECT NULL,'"+title+"','"+content+"','"+hehe+"' FROM DUAL WHERE NOT EXISTS(SELECT title FROM pa WHERE title = '"+title+"')");
        // int flage=this.executeUpdate("INSERT INTO pa VALUES(NULL,'"+title+"','"+content+"','"+hehe+"');");
         return flage;
-
     }
     public int delete(String id){
         int flage=this.executeUpdate("DELETE FROM pa WHERE id="+id);
