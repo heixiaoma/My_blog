@@ -7,7 +7,7 @@ web前端使用李青美女的博客模板
 
 效果图
 
-![image](https://github.com/heixiaoma/My_blog/edit/master/a.png)
-![image](https://github.com/heixiaoma/My_blog/edit/master/b.png)
-![image](https://github.com/heixiaoma/My_blog/edit/master/c.png)
-![image](https://github.com/heixiaoma/My_blog/edit/master/d.png)
+![image](https://github.com/heixiaoma/My_blog/raw/master/a.png)
+![image](https://github.com/heixiaoma/My_blog/raw/master/b.png)
+![image](https://github.com/heixiaoma/My_blog/raw/master/c.png)
+![image](https://github.com/heixiaoma/My_blog/raw/master/d.png)
